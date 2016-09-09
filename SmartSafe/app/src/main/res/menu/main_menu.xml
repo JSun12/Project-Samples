@@ -1,0 +1,45 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_autorenew_black_48dp"
+        android:orderInCategory = "5"
+        app:showAsAction="always"
+        android:title="Refresh Safe Status"
+        android:textColor="@android:color/black"/>
+
+    <group>
+        <item
+            android:id="@+id/init_connection"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="@string/overflow_init_connect"
+            android:textColor="@android:color/black"/>
+
+        <item
+            android:id="@+id/add_safe"
+            android:orderInCategory="2"
+            app:showAsAction="never"
+            android:title="@string/overflow_add_safe"
+            android:textColor="@android:color/black"/>
+
+        <item
+            android:id="@+id/settings"
+            android:orderInCategory="3"
+            app:showAsAction="never"
+            android:title="@string/overflow_setting"
+            android:textColor="@android:color/black"/>
+
+        <item
+            android:id="@+id/about"
+            android:orderInCategory="4"
+            app:showAsAction="never"
+            android:title="@string/overflow_about"
+            android:textColor="@android:color/black"/>
+    </group>
+
+</menu>
