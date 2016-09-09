@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidapp.elec291group.smartsafe.AddSafe">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Name for the Safe"
+        android:id="@+id/safeIdTxt"
+        android:layout_above="@+id/addButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/idField"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/addButton" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+</RelativeLayout>

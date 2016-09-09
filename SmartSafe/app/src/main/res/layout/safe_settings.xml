@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Autolock"
+        android:id="@+id/autolock"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password "
+        android:id="@+id/textView"
+        android:layout_below="@+id/motionToggle"
+        android:layout_alignStart="@+id/motionToggle"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordText"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Password"
+        android:id="@+id/setPwButton"
+        android:layout_below="@+id/passwordText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of Tries"
+        android:id="@+id/numTriesTxt"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/setPwButton"
+        android:layout_alignStart="@+id/setPwButton" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/autolockToggle"
+        android:layout_below="@+id/autolock"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/numTriesTxt"
+        android:layout_alignStart="@+id/passwordText"
+        android:layout_alignEnd="@+id/passwordText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Motion Sensor"
+        android:id="@+id/motionTxt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/autolockToggle"
+        android:layout_alignEnd="@+id/setPwButton" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/motionToggle"
+        android:checked="false"
+        android:layout_below="@+id/motionTxt"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/updateButton"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
